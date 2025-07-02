@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Task Tracker</h1>
+
+    <!-- Task Form -->
+     <div>
+        <input id="title" placeholder="Task Title"><br>
+        <textarea id="description" placeholder="Task Description"></textarea>
+        <select id="status">
+            <option value="To Do">To Do</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Complete">Complete</option>
+        </select><br>
+        <button onclick="addTask()">Add Task</button>
+     </div>
+     <hr>
+
+     <!-- Task Filtering -->
+      <div>
+        <label for="filter">Filter by Status:</label>
+        <select id="filter" onchange="renderTasks()">
+            <option value="All">All</option>
+            <option value="To Do">To Do</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Complete">Complete</option>
+        </select>
+      </div>
+
+      <hr>
+
+      <!-- Task List -->
+       <div id="taskList"></div>
+
+       <script src="script.js"></script>
+    </body>
+</html>
