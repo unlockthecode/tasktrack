@@ -20,7 +20,7 @@
             <option value="Complete">Complete</option>
         </select><br>
         <button onclick="addTask()">Add Task</button>
-        <button onclick="delTask()">Delete All Tasks</button>
+        <button onclick="delTasks()">Delete All</button>
      </div>
      <hr>
 
@@ -28,7 +28,7 @@
       <div>
         <label for="filter">Filter by Status:</label>
         <select id="filter" onchange="renderTasks()">
-            <option value="All">All</option>
+            <option value="">All</option>
             <option value="To Do">To Do</option>
             <option value="In Progress">In Progress</option>
             <option value="Complete">Complete</option>

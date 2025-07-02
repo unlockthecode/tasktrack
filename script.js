@@ -5,7 +5,7 @@ function saveTasks() {
 }
 
 function delTasks() {
-  localStorage.removeItem("tasks");
+  localStorage.removeItem("tasks"); 
   tasks = [];
   renderTasks();
 }
@@ -83,11 +83,11 @@ function addComment(id, input) {
   const task = tasks.find(t => t.id === id);
   if (task) {
     task.comments.push(comment);
-    input.value = ""; // clear input
+    input.value = "";
     saveTasks();
     renderTasks();
   }
 }
 
-// Initial render when page loads
+// Initial render when page loads 
 renderTasks();
