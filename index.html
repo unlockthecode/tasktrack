@@ -11,14 +11,16 @@
 
     <!-- Task Form -->
      <div>
-        <input id="title" placeholder="Task Title"><br>
+        <input id="title" placeholder="Task Title">
         <textarea id="description" placeholder="Task Description"></textarea>
         <select id="status">
+            <option value="">Status</option>
             <option value="To Do">To Do</option>
             <option value="In Progress">In Progress</option>
             <option value="Complete">Complete</option>
         </select><br>
         <button onclick="addTask()">Add Task</button>
+        <button onclick="delTask()">Delete All Tasks</button>
      </div>
      <hr>
 
