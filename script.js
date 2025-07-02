@@ -54,7 +54,7 @@ function renderTasks() {
       <select onchange="updateStatus(${task.id}, this.value)">
         <option ${task.status === 'To Do' ? 'selected' : ''}>To Do</option>
         <option ${task.status === 'In Progress' ? 'selected' : ''}>In Progress</option>
-        <option ${task.status === 'Done' ? 'selected' : ''}>Done</option>
+        <option ${task.status === 'Completed' ? 'selected' : ''}>Completed</option>
       </select><br><br>
 
       <div>
