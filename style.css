@@ -30,7 +30,31 @@ button:hover {
 }
 
 .comment {
-  margin-left: 10px;
+  margin: 4px 0;
+}
+
+.delete-comment {
+  color: red;
+  cursor: pointer;
+  margin-right: 8px;
+  font-weight: bold;
+  display: inline-block;
+  width: 16px;
+}
+
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-header h3 {
+  margin: 0;
+}
+
+.created-date {
   font-size: 0.9em;
-  color: #555;
+  color: #666;
 }
